@@ -1,0 +1,70 @@
+PS C:\Program Files\Git> cd C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/06/17     22:24                git_challenge
+
+
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial> cd C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> echo "Hello,world!" >> hello_world.txt
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git add C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git status
+On branch main
+Your branch is ahead of 'samurai-terakoya/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../README.md
+
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git commit -m "１回目のコミット"
+[main 5c8bfdc] １回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git add C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git commit -m "２回目のコミット"
+[main 42f03ee] ２回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git log
+commit 42f03ee94934cc58e17925f09d30d37586df7998 (HEAD -> main)
+Author: shimada-yuji <shishishishishimama@gmail.com>
+Date:   Mon Jun 17 22:30:19 2024 +0900
+
+    ２回目のコミット
+
+commit 5c8bfdcd12879c3cc6becbaf55e29d461ad92654
+Author: shimada-yuji <shishishishishimama@gmail.com>
+Date:   Mon Jun 17 22:28:56 2024 +0900
+
+    １回目のコミット
+
+commit e123b02ca3bc4c0b6998fdc4a2b348165756e616
+Author: shimada-yuji <shishishishishimama@gmail.com>
+Date:   Thu Jun 13 17:18:22 2024 +0900
+
+    ２回目のコミット
+
+commit 9f103a72291a12a9dd5731088fa5827374b6c559
+Author: shimada-yuji <shishishishishimama@gmail.com>
+Date:   Thu Jun 13 17:13:09 2024 +0900
+
+    一回目のコミット
+
+commit 5f945b5b7f5ae965ae84c3def943aef3dc400a5d (samurai-terakoya/main)
+Author: shimada-yuji <shishishishishimama@gmail.com>
+Date:   Thu Jun 13 15:20:04 2024 +0900
+
+    READMEファイルを追加
+PS C:\Users\shish\OneDrive\デスクトップ\samurai-terakoya\git_tutorial\git_challenge> git log --oneline
+42f03ee (HEAD -> main) ２回目のコミット
+5c8bfdc １回目のコミット
+e123b02 ２回目のコミット
